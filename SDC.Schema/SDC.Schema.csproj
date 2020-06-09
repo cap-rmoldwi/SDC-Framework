@@ -41,9 +41,71 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Schemas\Schemas\SDCBase.xsd" />
+    <None Remove="Schemas\Schemas\SDCDataTypes.xsd" />
+    <None Remove="Schemas\Schemas\SDCExpressions.xsd" />
+    <None Remove="Schemas\Schemas\SDCFormDesign.xsd" />
+    <None Remove="Schemas\Schemas\SDCMapping.xsd" />
+    <None Remove="Schemas\Schemas\SDCOverrides.xsd" />
+    <None Remove="Schemas\Schemas\SDCResources.xsd" />
+    <None Remove="Schemas\Schemas\SDCRetrieveForm.xsd" />
+    <None Remove="Schemas\Schemas\SDCRetrieveFormComplex.xsd" />
+    <None Remove="Schemas\Schemas\SDCSubmitForm.xsd" />
+    <None Remove="Schemas\Schemas\SDCTemplateAdmin.xsd" />
+    <None Remove="Schemas\Schemas\SDC_IDR.xsd" />
+    <None Remove="Schemas\Schemas\xhtml.xsd" />
+    <None Remove="Schemas\Schemas\xml.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Include="Schemas\JSON Generator\SdcSerializerJson.cs" />
     <Compile Include="Schemas\MsgPack Generator\SdcSerializerMsgPack.cs" />
     <Compile Include="Schemas\MsgPack Generator\SDCBase.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Schemas\Schemas\SDCBase.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDCDataTypes.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDCExpressions.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDCFormDesign.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDCMapping.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDCOverrides.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDCResources.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDCRetrieveForm.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDCRetrieveFormComplex.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDCSubmitForm.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDCTemplateAdmin.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\SDC_IDR.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\xhtml.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schemas\Schemas\xml.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

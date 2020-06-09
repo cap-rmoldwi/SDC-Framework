@@ -12,24 +12,33 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "sdc",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "XSD_FILE_DIRECTORY": "\\Schemas\\Schemas",
+        "SDC_TARGET_NAMESPACE": "urn:ihe:qrph:sdc:2016"
       }
     },
     "SDC.WebService": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "sdc",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "XSD_FILE_DIRECTORY": "\\Schemas\\Schemas",
+        "SDC_TARGET_NAMESPACE": "urn:ihe:qrph:sdc:2016"
       },
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
     },
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/weatherforecast",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/sdc",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "XSD_FILE_DIRECTORY": "\\Schemas\\Schemas",
+        "SDC_TARGET_NAMESPACE": "urn:ihe:qrph:sdc:2016"
+      },
       "publishAllPorts": true,
       "useSSL": true
     }
